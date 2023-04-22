@@ -4,13 +4,13 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width">
-  <title>BikeGuardian</title>
+  <title>SafePass</title>
   <link href="style.css" rel="stylesheet" type="text/css" />
   <link href='https://fonts.googleapis.com/css?family=Poppins' rel='stylesheet'>
 </head>
 
 <body>
-  <div id="top"><h1>BikeGuardian</h1></div>
+  <div id="top"><h1>SafePass</h1></div>
 
   <div id="main">
     <div id="col-esq" class="edges"></div>
@@ -18,22 +18,121 @@
     <div id="mid">
       
       <div id="intro">
-        <h2 class="titles">O que é o BikeGuardian?</h2>
-        <p>Jason Lee Scott foi escolhido para se tornar o primeiro Power Ranger Vermelho. Jason era um atleta talentoso e líder natural, o que o tornou uma escolha natural para liderar a equipe de Power Rangers na luta contra as forças do mal. Ele usava seus poderes de Ranger para lutar contra monstros e salvar o mundo, sempre mantendo uma atitude positiva e corajosa. Jason se tornou um dos personagens mais populares da série, e sua história inspirou muitos fãs a perseguirem seus sonhos e acreditarem em si mesmos.</p>
+        <h2 class="titles">O que é o SafePass?</h2>
+        <p>SafePass é um projeto acadêmico feito por estudantes da Universidade de Vila Velha.</p>
+        <p>O intuito dessa ferramenta é ajudar e conscientizar o ciclista a realizar a travessia da Terceira Ponta, que liga as cidades de Vila Velha e Vitória. A ferramenta não <b>proíbe</b> o usuário de realizar ou não a travessia pela ciclovia. O objetivo é apenas <b>contribuir</b> para a checagem dos equipamentos de segurança e demais fatores que devem ser considerados antes da pedalada pela ponte.</p>
       </div>
 
       
       <div id="box-geral">
         
-        <div id="box-dir" class="box-cont">
-          <h2 class="titles">Sobre o ciclista</h2>
-          <div class="box-questions">
-            <h3 class="question">Há quanto tempor você anda de bicicleta?</h3>
-          </div>
-        </div>
-        
         <div id="box-esq" class="box-cont">
+          <h2 class="titles">Sobre o ciclista</h2>
+
+          <!-- COMEÇO DOS BOXES DE PERGUNTAS -->
+          <div class="box-questions">
+            <h3 class="question">Há quanto tempo você anda de bicicleta?</h3>
+            <div id="q-tempo" class="box-options">
+
+              <div class="div-option">
+                <label for="tempo1" class="opt-click">
+                <input type="radio" id="tempo1" name="tempo" value="">0 - 4 meses</label>
+              </div>
+
+              <div class="div-option">
+                <label for="tempo2" class="opt-click">
+                <input type="radio" id="tempo2" name="tempo" value="">5 - 12 meses</label>
+              </div>
+
+              <div class="div-option">
+                <label for="tempo3" class="opt-click">
+                <input type="radio" id="tempo3" name="tempo" value="">1 - 2 anos</label>
+              </div>
+
+              <div class="div-option">
+                <label for="tempo4" class="opt-click">
+                <input type="radio" id="tempo4" name="tempo" value="">Mais de 2 anos</label>
+              </div>
+              
+            </div>
+          </div>
+
+          <div class="box-questions">
+            <h3 class="question">Quantas vezes você pedala por semana?</h3>
+            <div id="q-tempo" class="box-options">
+
+              <div class="div-option">
+                <label for="freq1" class="opt-click">
+                <input type="radio" id="freq1" name="frequencia" value="">1 - 2 vezes</label>
+              </div>
+
+              <div class="div-option">
+                <label for="freq2" class="opt-click">
+                <input type="radio" id="freq2" name="frequencia" value="">3 - 4 vezes</label>
+              </div>
+
+              <div class="div-option">
+                <label for="freq3" class="opt-click">
+                <input type="radio" id="freq3" name="frequencia" value="">5 - 6 vezes</label>
+              </div>
+
+              <div class="div-option">
+                <label for="freq4" class="opt-click">
+                <input type="radio" id="freq4" name="frequencia" value="">Todos os dias</label>
+              </div>
+              
+            </div>
+          </div>
+
+          <div class="box-questions">
+            <h3 class="question">Você utiliza equipamentos de segurança?</h3>
+            <div id="q-tempo" class="box-options">
+
+              <div class="div-option">
+                <label for="eqp1" class="opt-click">
+                <input type="radio" id="eqp1" name="equipamentos" value="">Sim</label>
+              </div>
+
+              <div class="div-option">
+                <label for="eqp2" class="opt-click" id="yes-no">
+                <input type="radio" id="eqp2" name="equipamentos" value="">Não</label>
+              </div>
+              
+            </div>
+          </div>
+          
+        </div>
+
+      <!-- QUEBRA PARA A COLUNA DIREITA -->
+        
+        <div id="box-dir" class="box-cont">
           <h2 class="titles">Sobre a bicicleta</h2>
+          <div class="box-questions">
+            <h3 class="question">Há quanto tempo foi feita a última revisão na sua bicicleta?</h3>
+            <div id="q-tempo" class="box-options">
+
+              <div class="div-option">
+                <label for="tempo1" class="opt-click">
+                <input type="radio" id="tempo1" name="tempo" value="">0 - 4 meses</label>
+              </div>
+
+              <div class="div-option">
+                <label for="tempo2" class="opt-click">
+                <input type="radio" id="tempo2" name="tempo" value="">5 - 12 meses</label>
+              </div>
+
+              <div class="div-option">
+                <label for="tempo3" class="opt-click">
+                <input type="radio" id="tempo3" name="tempo" value="">1 - 2 anos</label>
+              </div>
+
+              <div class="div-option">
+                <label for="tempo4" class="opt-click">
+                <input type="radio" id="tempo4" name="tempo" value="">Mais de 2 anos</label>
+              </div>
+              
+            </div>
+          </div>
         </div>
         
       </div>
