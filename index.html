@@ -20,7 +20,7 @@
       <div id="intro">
         <h2 class="titles">O que é o SafePass?</h2>
         <p>SafePass é um projeto acadêmico feito por estudantes da Universidade de Vila Velha.</p>
-        <p>O intuito dessa ferramenta é ajudar e conscientizar o ciclista a realizar a travessia da Terceira Ponta, que liga as cidades de Vila Velha e Vitória. A ferramenta não <b>proíbe</b> o usuário de realizar ou não a travessia pela ciclovia. O objetivo é apenas <b>contribuir</b> para a checagem dos equipamentos de segurança e demais fatores que devem ser considerados antes da pedalada pela ponte.</p>
+        <p>O intuito dessa ferramenta é ajudar e conscientizar o ciclista a realizar a travessia da Terceira Ponta, que liga as cidades de Vila Velha e Vitória. A ferramenta não <b>proíbe</b> ou <b>permite</b> o usuário de realizar ou não a travessia pela ciclovia. O objetivo é apenas <b>contribuir</b> para a checagem dos equipamentos de segurança e demais fatores que devem ser considerados antes da pedalada pela ponte.</p>
       </div>
 
       
@@ -34,24 +34,28 @@
             <h3 class="question">Há quanto tempo você anda de bicicleta?</h3>
             <div id="q-tempo" class="box-options">
 
-              <div class="div-option">
-                <label for="tempo1" class="opt-click">
-                <input type="radio" id="tempo1" name="tempo" value="">0 - 4 meses</label>
+              <div class="two-options">
+                <div class="div-option">
+                  <label for="tempo1" class="opt-click">
+                  <input type="radio" id="tempo1" name="tempo" value="">0 - 4 meses</label>
+                </div>
+  
+                <div class="div-option">
+                  <label for="tempo2" class="opt-click">
+                  <input type="radio" id="tempo2" name="tempo" value="">5 - 12 meses</label>
+                </div>
               </div>
 
-              <div class="div-option">
-                <label for="tempo2" class="opt-click">
-                <input type="radio" id="tempo2" name="tempo" value="">5 - 12 meses</label>
-              </div>
-
-              <div class="div-option">
-                <label for="tempo3" class="opt-click">
-                <input type="radio" id="tempo3" name="tempo" value="">1 - 2 anos</label>
-              </div>
-
-              <div class="div-option">
-                <label for="tempo4" class="opt-click">
-                <input type="radio" id="tempo4" name="tempo" value="">Mais de 2 anos</label>
+              <div class="two-options">
+                <div class="div-option">
+                  <label for="tempo3" class="opt-click">
+                  <input type="radio" id="tempo3" name="tempo" value="">1 - 2 anos</label>
+                </div>
+  
+                <div class="div-option">
+                  <label for="tempo4" class="opt-click">
+                  <input type="radio" id="tempo4" name="tempo" value="">Mais de 2 anos</label>
+                </div>
               </div>
               
             </div>
@@ -61,24 +65,28 @@
             <h3 class="question">Quantas vezes você pedala por semana?</h3>
             <div id="q-tempo" class="box-options">
 
-              <div class="div-option">
-                <label for="freq1" class="opt-click">
-                <input type="radio" id="freq1" name="frequencia" value="">1 - 2 vezes</label>
+              <div class="two-options">
+                <div class="div-option">
+                  <label for="freq1" class="opt-click">
+                  <input type="radio" id="freq1" name="frequencia" value="">Raramente</label>
+                </div>
+  
+                <div class="div-option">
+                  <label for="freq2" class="opt-click">
+                  <input type="radio" id="freq2" name="frequencia" value="">1 - 3 vezes</label>
+                </div>
               </div>
 
-              <div class="div-option">
-                <label for="freq2" class="opt-click">
-                <input type="radio" id="freq2" name="frequencia" value="">3 - 4 vezes</label>
-              </div>
-
-              <div class="div-option">
-                <label for="freq3" class="opt-click">
-                <input type="radio" id="freq3" name="frequencia" value="">5 - 6 vezes</label>
-              </div>
-
-              <div class="div-option">
-                <label for="freq4" class="opt-click">
-                <input type="radio" id="freq4" name="frequencia" value="">Todos os dias</label>
+              <div class="two-options">
+                <div class="div-option">
+                  <label for="freq3" class="opt-click">
+                  <input type="radio" id="freq3" name="frequencia" value="">4 - 6 vezes</label>
+                </div>
+  
+                <div class="div-option">
+                  <label for="freq4" class="opt-click">
+                  <input type="radio" id="freq4" name="frequencia" value="">Todos os dias</label>
+                </div>
               </div>
               
             </div>
@@ -89,13 +97,35 @@
             <div id="q-tempo" class="box-options">
 
               <div class="div-option">
-                <label for="eqp1" class="opt-click">
-                <input type="radio" id="eqp1" name="equipamentos" value="">Sim</label>
+                <label for="eqp-sim" class="opt-click">
+                <input type="radio" id="eqp-sim" name="equipamentos" value="">Sim</label>
               </div>
 
               <div class="div-option">
-                <label for="eqp2" class="opt-click" id="yes-no">
-                <input type="radio" id="eqp2" name="equipamentos" value="">Não</label>
+                <label for="eqp-nao" class="opt-click">
+                <input type="radio" id="eqp-nao" name="equipamentos" value="">Não</label>
+              </div>
+              
+            </div>
+          </div>
+
+          <div class="box-questions">
+            <h3 class="question">Quais equipamentos para ciclismo você utiliza?</h3>
+            <div id="q-tempo" class="box-options">
+
+              <div class="div-option">
+                <label for="eqp1" class="opt-click">
+                <input type="radio" id="eqp1" name="equipamentos-opt" value="">Capacete</label>
+              </div>
+
+              <div class="div-option">
+                <label for="eqp2" class="opt-click">
+                <input type="radio" id="eqp2" name="equipamentos-opt" value="">Luva</label>
+              </div>
+
+              <div class="div-option">
+                <label for="eqp3" class="opt-click">
+                <input type="radio" id="eqp3" name="equipamentos-opt" value="">Óculos</label>
               </div>
               
             </div>
@@ -107,36 +137,119 @@
         
         <div id="box-dir" class="box-cont">
           <h2 class="titles">Sobre a bicicleta</h2>
+          
           <div class="box-questions">
             <h3 class="question">Há quanto tempo foi feita a última revisão na sua bicicleta?</h3>
             <div id="q-tempo" class="box-options">
 
+              <div class="two-options">
+                <div class="div-option">
+                  <label for="tempo1" class="opt-click">
+                  <input type="radio" id="tempo1" name="tempo" value="">0 - 4 meses</label>
+                </div>
+  
+                <div class="div-option">
+                  <label for="tempo2" class="opt-click">
+                  <input type="radio" id="tempo2" name="tempo" value="">5 - 12 meses</label>
+                </div>
+              </div>
+
+              <div class="two-options">
+                <div class="div-option">
+                  <label for="tempo3" class="opt-click">
+                  <input type="radio" id="tempo3" name="tempo" value="">1 - 2 anos</label>
+                </div>
+  
+                <div class="div-option">
+                  <label for="tempo4" class="opt-click">
+                  <input type="radio" id="tempo4" name="tempo" value="">Mais de 2 anos</label>
+                </div>
+              </div>
+              
+            </div>
+            
+          </div>
+          
+          <div class="box-questions">
+            <h3 class="question">Sua bicicleta possui refletor (olho de gato)?</h3>
+            <div id="q-tempo" class="box-options">
+
               <div class="div-option">
-                <label for="tempo1" class="opt-click">
-                <input type="radio" id="tempo1" name="tempo" value="">0 - 4 meses</label>
+                <label for="refl-sim" class="opt-click">
+                <input type="radio" id="refl-sim" name="refletor" value="">Sim</label>
               </div>
 
               <div class="div-option">
-                <label for="tempo2" class="opt-click">
-                <input type="radio" id="tempo2" name="tempo" value="">5 - 12 meses</label>
-              </div>
-
-              <div class="div-option">
-                <label for="tempo3" class="opt-click">
-                <input type="radio" id="tempo3" name="tempo" value="">1 - 2 anos</label>
-              </div>
-
-              <div class="div-option">
-                <label for="tempo4" class="opt-click">
-                <input type="radio" id="tempo4" name="tempo" value="">Mais de 2 anos</label>
+                <label for="refl-nao" class="opt-click">
+                <input type="radio" id="refl-nao" name="refletor" value="">Não</label>
               </div>
               
             </div>
           </div>
+
+          <div class="box-questions">
+            <h3 class="question">Sua bicicleta possui sininho?</h3>
+            <div id="q-tempo" class="box-options">
+
+              <div class="div-option">
+                <label for="sino-sim" class="opt-click">
+                <input type="radio" id="sino-sim" name="sininho" value="">Sim</label>
+              </div>
+
+              <div class="div-option">
+                <label for="sino-nao" class="opt-click">
+                <input type="radio" id="sino-nao" name="sininho" value="">Não</label>
+              </div>
+              
+            </div>
+          </div>
+
+          <div class="box-questions">
+            <h3 class="question">Sua bicicleta possui freios?</h3>
+            <div id="q-tempo" class="box-options">
+
+              <div class="div-option">
+                <label for="freio-sim" class="opt-click">
+                <input type="radio" id="freio-sim" name="freio" value="">Sim</label>
+              </div>
+
+              <div class="div-option">
+                <label for="freio-nao" class="opt-click">
+                <input type="radio" id="freio-nao" name="freio" value="">Não</label>
+              </div>
+              
+            </div>
+          </div>
+
+          <div class="box-questions">
+            <h3 class="question">Sua bicicleta possui retrovisor?</h3>
+            <div id="q-tempo" class="box-options">
+
+              <div class="div-option">
+                <label for="retro-sim" class="opt-click">
+                <input type="radio" id="retro-sim" name="retrovisor" value="">Sim</label>
+              </div>
+
+              <div class="div-option">
+                <label for="retro-nao" class="opt-click">
+                <input type="radio" id="retro-nao" name="retrovisor" value="">Não</label>
+              </div>
+              
+            </div>
+          </div>
+
+          
         </div>
-        
+
+        <!-- FIM DA DIV PAI DAS PERGUNTAS -->
+      </div>
+
+      <div id="fim">
+        <button onclick="" id="confirm">CHECAR</button>
       </div>
       
+
+      <!-- FIM DA DIV DO MEIO -->
     </div>
       
     <div id="col-dir" class="edges"></div>

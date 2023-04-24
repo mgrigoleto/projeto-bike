@@ -33,10 +33,11 @@ div#mid{
 
 /* DIV DA INTRODUÇÃO */
 div#intro{
-  margin: 50px;
+  margin: 50px 50px 100px 50px;
 }
 div#intro p{
   font-size:20px;
+  text-align: justify;
 }
 
 /* TÍTULOS */
@@ -49,7 +50,7 @@ div#box-geral{
   display: flex;
 }
 .box-cont{
-  margin:50px;
+  padding:0 50px 50px 50px;
   width:50%;
 }
 
@@ -66,13 +67,19 @@ div#box-geral{
   font-size: 20px;
   text-align: center;
   margin:0;
-  padding-bottom:30px;
+  padding-bottom:20px;
 }
 .box-options{
-  font-size: 18px;
+  font-size: 16px;
   display: flex;
   align-items: center;
   justify-content: center;
+  flex-wrap: wrap;
+}
+/* DIV QUE AGRUPA 2 OPÇÕES */
+.two-options{
+  display: flex;
+  flex-direction: row;
 }
 
 input[type="radio"]{ /* REMOVE A BOLINHA DO INPUT */
@@ -83,24 +90,58 @@ input[type="radio"]{ /* REMOVE A BOLINHA DO INPUT */
 }
 
 .div-option{ /* DIV QUE ENVOLVE O LABEL */
-  margin: 5px;
+  margin: 10px;
 }
 
-.opt-click{  
+.opt-click{  /* OPÇÕES */
+  display: flex;
   cursor:pointer;
   padding:4px 10px 4px 10px;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
 
   color:white;
   background-color: #3d3dff;
   border-radius:10px;
-  border:2px solid black;
+  /* border:2px solid black; */
+  box-shadow: 3px 3px black;
+  min-width: 90px;
+  min-height: 60px;
 
   transition:0.15s;
 }
 
 .opt-click:hover{
   background-color: black;
+  box-shadow: 3px 3px #3b3b3b;
 }
+
+/* DIV DO BOTÃO */
+div#fim{
+  display: flex;
+  margin:0 50px 50px 50px;
+  justify-content: center;
+  align-items: center;
+}
+button#confirm{
+  border-radius: 10px;
+  background-color: #14065b;
+  color:white;
+  font-size: 20px;
+  width: 150px;
+  height: 50px;
+  border: none;
+  box-shadow: 3px 3px black;
+  transition: 0.15s;
+  cursor:pointer;
+}
+button#confirm:hover{
+  background-color: black;
+  box-shadow: 3px 3px #3b3b3b;
+}
+
+
 
 /* BOTTOM */
 div#bottom{
@@ -121,4 +162,47 @@ div#bottom p{
 div#bottom b{
   color:#3d3dff;
   font-size:24px;
+}
+
+/* RESIZE */
+@media screen and (max-width: 1250px){
+  /* TIRA AS COLUNAS LATERAIS */
+  .edges{
+    width: 0;
+  }
+  /* ALTERA A DIV DO MEIO PARA 100% DA TELA */
+  div#mid{
+    width:100vw;
+  }
+}
+
+@media screen and (min-width: 1251px){
+  /* ADICIONA AS COLUNAS LATERAIS */
+  .edges{
+    width: 10%;
+  }
+  /* ALTERA A DIV DO MEIO PARA 80% DA TELA */
+  div#mid{
+    width:80%;
+  }
+}
+
+@media screen and (max-width: 950px){
+  /* ALTERA A VISUALIZAÇÃO DE 2 COLUNAS PARA 1 SÓ */
+  div#box-geral{
+    display: block;
+  }
+  .box-cont{
+    width:calc(100% - 100px);
+  }  
+}
+
+@media screen and (min-width: 951px){
+  /* ALTERA A VISUALIZAÇÃO DE 2 COLUNAS PARA 1 SÓ */
+  div#box-geral{
+    display: flex;
+  }
+  .box-cont{
+    width:50%;
+  }
 }
