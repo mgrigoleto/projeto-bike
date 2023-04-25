@@ -82,7 +82,7 @@ div#box-geral{
   flex-direction: row;
 }
 
-input[type="radio"]{ /* REMOVE A BOLINHA DO INPUT */
+input[type="radio"], input[type="checkbox"]{ /* REMOVE A BOLINHA DO INPUT */
   opacity:0;
   width:0;
   height:0;
@@ -104,7 +104,6 @@ input[type="radio"]{ /* REMOVE A BOLINHA DO INPUT */
   color:white;
   background-color: #3d3dff;
   border-radius:10px;
-  /* border:2px solid black; */
   box-shadow: 3px 3px black;
   min-width: 90px;
   min-height: 60px;
@@ -115,6 +114,22 @@ input[type="radio"]{ /* REMOVE A BOLINHA DO INPUT */
 .opt-click:hover{
   background-color: black;
   box-shadow: 3px 3px #3b3b3b;
+}
+/* CLASSE QUE A OPÇÃO PEGA QUANDO É CLICADA */
+.opt-clicked{
+  background-color: black;
+  box-shadow: 3px 3px #3b3b3b;
+  display: flex;
+  cursor:pointer;
+  padding:4px 10px 4px 10px;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+
+  color:white;
+  border-radius:10px;
+  min-width: 90px;
+  min-height: 60px;
 }
 
 /* DIV DO BOTÃO */
@@ -193,16 +208,24 @@ div#bottom b{
     display: block;
   }
   .box-cont{
-    width:calc(100% - 100px);
-  }  
+    width:calc(100% - 50px);
+    padding:0 25px 25px 25px;
+  }
+  div#intro{
+    margin: 25px 25px 100px 25px;
+  }
 }
 
 @media screen and (min-width: 951px){
-  /* ALTERA A VISUALIZAÇÃO DE 2 COLUNAS PARA 1 SÓ */
+  /* ALTERA A VISUALIZAÇÃO DE 1 COLUNA PARA 2 */
   div#box-geral{
     display: flex;
   }
+  div#intro{
+    margin: 50px 50px 100px 50px;
+  }
   .box-cont{
     width:50%;
+    padding:0 50px 50px 50px;
   }
 }
