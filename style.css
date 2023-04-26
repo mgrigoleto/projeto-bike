@@ -33,7 +33,7 @@ div#mid{
 
 /* DIV DA INTRODUÇÃO */
 div#intro{
-  margin: 50px 50px 100px 50px;
+  margin: 50px;
 }
 div#intro p{
   font-size:20px;
@@ -104,7 +104,7 @@ input[type="radio"], input[type="checkbox"]{ /* REMOVE A BOLINHA DO INPUT */
   color:white;
   background-color: #3d3dff;
   border-radius:10px;
-  box-shadow: 3px 3px black;
+  box-shadow: 3px 3px #0b005c;
   min-width: 90px;
   min-height: 60px;
 
@@ -141,13 +141,14 @@ div#fim{
 }
 button#confirm{
   border-radius: 10px;
-  background-color: #14065b;
+  font-weight: bold;
+  background-color: #3d3dff;
   color:white;
-  font-size: 20px;
-  width: 150px;
-  height: 50px;
+  font-size: 26px;
+  width: 160px;
+  height: 60px;
   border: none;
-  box-shadow: 3px 3px black;
+  box-shadow: 3px 3px  #0b005c;;
   transition: 0.15s;
   cursor:pointer;
 }
@@ -212,7 +213,7 @@ div#bottom b{
     padding:0 25px 25px 25px;
   }
   div#intro{
-    margin: 25px 25px 100px 25px;
+    margin: 25px 25px 50px 25px;
   }
 }
 
@@ -222,7 +223,7 @@ div#bottom b{
     display: flex;
   }
   div#intro{
-    margin: 50px 50px 100px 50px;
+    margin: 50px;
   }
   .box-cont{
     width:50%;
