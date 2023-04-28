@@ -34,6 +34,7 @@ checkboxes.forEach(cb => {// para cada checkbox
 
 // aparecer as opções dos equipamentos
 
+let equipamentos = document.getElementById('equipo-opt')
 
 
 // 

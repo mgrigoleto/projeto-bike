@@ -35,7 +35,7 @@ div#mid{
 div#intro{
   margin: 50px;
 }
-div#intro p{
+div#intro p, div#result p{
   font-size:20px;
   text-align: justify;
 }
@@ -133,13 +133,13 @@ input[type="radio"], input[type="checkbox"]{ /* REMOVE A BOLINHA DO INPUT */
 }
 
 /* DIV DO BOTÃO */
-div#fim{
+.btn-div{
   display: flex;
   margin:0 50px 50px 50px;
   justify-content: center;
   align-items: center;
 }
-button#confirm{
+.btn-stl{
   border-radius: 10px;
   font-weight: bold;
   background-color: #3d3dff;
@@ -152,12 +152,10 @@ button#confirm{
   transition: 0.15s;
   cursor:pointer;
 }
-button#confirm:hover{
+.btn-stl:hover{
   background-color: black;
   box-shadow: 3px 3px #3b3b3b;
 }
-
-
 
 /* BOTTOM */
 div#bottom{
@@ -178,6 +176,44 @@ div#bottom p{
 div#bottom b{
   color:#3d3dff;
   font-size:24px;
+}
+
+/* RESULTADO */
+div#result{
+  border-radius: 10px;
+  border: 3px solid #000d4d;
+  background-color: lightblue;
+  color:#000d4d;
+  box-shadow: 3px 3px #000d4d;
+  padding: 25px;
+  margin: 50px;
+
+  display:flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.aprovado{
+  border-radius: 10px;
+  border: 3px solid #000d4d;
+  background-color: lightblue;
+  color:#000d4d;
+  box-shadow: 3px 3px #000d4d;
+  padding: 25px;
+  margin: 50px;
+}
+.reprovado{
+  border-radius: 10px;
+  border: 3px solid #4d001f;
+  background-color: #f5bcbc;
+  color:#4d001f;
+  box-shadow: 3px 3px #4d001f;
+  padding: 25px;
+  margin: 50px;
+}
+div#btn-result{
+  margin:25px;
 }
 
 /* RESIZE */
@@ -215,6 +251,9 @@ div#bottom b{
   div#intro{
     margin: 25px 25px 50px 25px;
   }
+  div#result, .aprovado, .reprovado{
+    margin:25px;
+  }
 }
 
 @media screen and (min-width: 951px){
@@ -222,7 +261,7 @@ div#bottom b{
   div#box-geral{
     display: flex;
   }
-  div#intro{
+  div#intro, div#result, .aprovado, .reprovado{
     margin: 50px;
   }
   .box-cont{
