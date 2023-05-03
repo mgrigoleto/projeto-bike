@@ -60,6 +60,7 @@ respostaNao.addEventListener('click', function(){// se for não, esconde a div
 function verificar(){
   let respostas = []//cria o vetor que armazena as respostas
   
+  
   const allQuestions = document.querySelectorAll('input[type=radio]')
   allQuestions.forEach(question => {
     if(question.checked){
@@ -114,7 +115,7 @@ function verificar(){
         mensagem.push("Os sinos ou buzinas funcionam como alertas sonoros para as pessoas que percorrem o mesmo caminho que o ciclista, sejam pedestres, motoristas, pilotos ou outros ciclistas. Geralmente são usados em ultrapassagens e são muito importantes. Como você informou que não possui buzina ou sininho, não recomendamos que realize a travessia.")
         break;
 
-      case "nao-freio":
+      case "nao-freio"://não tem freio
         erro = true
         mensagem.push("Os freios são um dos componentes mais importantes de uma bicicleta, pois permitem ao ciclista controlar a velocidade e parar a bicicleta de maneira segura e eficiente. Eles são essenciais para a segurança do ciclista, especialmente em situações de emergência ou em descidas íngremes, como as existentes na ciclovia da ponte. Pelo fato da sua bicicleta não possuir freios, não recomendamos que você realize a travessia.")
         break;
@@ -123,37 +124,67 @@ function verificar(){
     
   }
 
-  if(respostas.includes("sim-eqp") && !(respostas.includes("capacete"))){
+  if(respostas.includes("sim-eqp") && !(respostas.includes("capacete"))){//se o capacete não estiver marcado
     erro = true
     mensagem.push("Apesar de você possuir outros equipamentos de segurança, é essencial que você possua um capacete de ciclismo. Os equipamentos de segurança para ciclistas, como o próprio nome já diz, devem ser usados para garantir a segurança e integridade física do ciclista. Portanto, não recomendamos que você realize a travessia sem capacete.")
   }
+
+  console.log(respostas.length)
+  let existeEqp = false//boolean para verificar se há checkbox marcada ou não
+  let temEquipamento = document.getElementById('eqp-sim')
+  let naoTemEquipamento = document.getElementById('eqp-nao')
+  if(temEquipamento.checked){
+    existeEqp = true
+  }else if(naoTemEquipamento.checked){
+    existeEqp = false
+  }
   
-  mostrar(erro, mensagem)
+  console.log(existeEqp)
+  
+  // VALIDAÇÃO PARA VER SE FOI PREENCHIDO OU NÃO
+  if((existeEqp == true && respostas.length >= 8) || (existeEqp == false && respostas.length >= 7)){
+    document.getElementById('msgerro').style.display = 'none'
+    mostrar(erro, mensagem)    
+  }else{
+    document.getElementById('msgerro').innerHTML = "<p>ERRO! VOCÊ DEVE RESPONDER TODAS AS PERGUNTAS!</p>"
+  }
 }
 
+
+
+
+
 function mostrar(erro, mensagem){
+  //esconder os conteúdos da tela
   document.getElementById('box-geral').style.display = 'none'
   document.getElementById('verificar').style.display = 'none'
+  document.getElementById('intro').style.display = 'none'
+  
   const divResultado = document.getElementById('result')
   const resultado = document.getElementById('res-texto')
   
   if(erro == true){
+    //mostrar a div resultado e adicionar seu estilo
     divResultado.style.display = 'block'
     divResultado.classList.add('reprovado')
 
+    //montar comçeo da mensagem
     resultado.innerHTML = '<p>Ops!</p><p>Pelo o que observamos, <b>você não está preparado</b> para realizar a travessia da ponte com segurança.</p>'+
           '<p>Vale lembrar que não estamos te proibindo de realizar a travessia pela ciclovia. A fiscalização e regulamentação dos ciclistas é de responsabilidade das autoridades públicas. Esta ferramenta tem o único intuito de contribuir para que sua pedalada seja mais segura.</p>'
     
     for(let j = 0;j<mensagem.length;j++){
-      console.log(mensagem[j])
       resultado.innerHTML += '<p>'+mensagem[j]+'</p>'
     }
   }
   else{
+    //mostrar a div resultado e adicionar seu estilo
     divResultado.style.display = 'block'
     divResultado.classList.add('aprovado')
-    resultado.innerHTML = '<p>Maravilha!</p><p>Pelo o que observamos, <b>você está preparado</b> para realizar a travessia da ponte com segurança. Lembre-se de checar os freios, os pneus e seus equipamentos de segurança.</p>'+
+
+    ///montar mensagem
+    resultado.innerHTML = '<p>Maravilha!</p><p>Pelo o que observamos, <b>você está preparado</b> para realizar a travessia da ponte com segurança.</p>'+
           '<p>Vale lembrar que não estamos te dando permissão legal para realizar a travessia pela ciclovia. A fiscalização e regulamentação dos ciclistas é de responsabilidade das autoridades públicas. Esta ferramenta tem o único intuito de contribuir para que sua pedalada seja mais segura.</p>'+
+      '<p> Lembre-se de checar os freios, os pneus e seus equipamentos de segurança. Se for conveniente, você pode verificar a possibilidade de adquirir outros equipamentos, como retorvisor, apoio da bicileta, lanternas, etc.</p>'+
           '<p>Tenha uma boa pedalada!</p>'
   }
 }

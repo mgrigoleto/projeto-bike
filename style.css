@@ -177,6 +177,15 @@ div#bottom b{
   color:#3d3dff;
   font-size:24px;
 }
+div#bottom a{
+  color:inherit;
+  text-decoration: none;
+  transition:0.15s;
+}
+div#bottom a:hover{
+  color:lightblue;
+  text-decoration: underline;
+}
 
 /* RESULTADO */
 div#result{
@@ -195,7 +204,7 @@ div#result{
 .reprovado{
   border-radius: 10px;
   border: 3px solid #4d001f;
-  background-color: #f5bcbc;
+  background-color: #fee1e1;
   color:#4d001f;
   box-shadow: 3px 3px #4d001f;
   padding: 25px;
@@ -203,6 +212,18 @@ div#result{
 }
 div#btn-result{
   margin:25px;
+}
+
+/* ERRO */
+div#msgerro{
+  color:#ff0000;
+  font-weight:bold;
+  font-size: 20px;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-bottom: 50px;
 }
 
 /* RESIZE */
