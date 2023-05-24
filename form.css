@@ -1,6 +1,7 @@
 body{
   margin:0;
   font-family: Poppins;
+  background-color: #cdf2fe;
 }
 
 /* NOME EM CIMA */
@@ -9,11 +10,33 @@ div#top{
   font-weight: bold;
   text-align: center;
   background-color: black;
-  color: #3d3dff;
+  color: white;
 }
 div#top h1{
   margin:0;
   padding: 10px 0 10px 0px;
+}
+
+/* NAVEGAÇÃO */
+div#path{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  /* padding: 10px 0 10px 0; */
+  margin:10px;
+}
+div#path p{
+  margin:0;
+  padding: 0;
+  font-size: 18px;
+}
+div#path a{
+  text-decoration: none;
+  color: inherit;
+  transition: 0.15s;
+}
+div#path a:hover{
+  text-decoration: underline;
 }
 
 /* COLUNAS */
@@ -23,7 +46,7 @@ div#main{
 }
 .edges{
   width:10%;
-  background-color: black;
+  background-color: #ffffff;
 }
 
 /* DIV PRINCIPAL PARA O CONTEÚDO */
@@ -31,11 +54,7 @@ div#mid{
   width:80%;
 }
 
-/* DIV DA INTRODUÇÃO */
-div#intro{
-  margin: 50px;
-}
-div#intro p, div#result p{
+div#result p{
   font-size:20px;
   text-align: justify;
 }
@@ -132,6 +151,22 @@ input[type="radio"], input[type="checkbox"]{ /* REMOVE A BOLINHA DO INPUT */
   min-height: 60px;
 }
 
+/* CLASSE PARA O BOTÃO DESABILITADO */
+.opt-disabled{
+  background-color: #757575;
+  box-shadow: 3px 3px #2b2b2b;
+  display: flex;
+  padding:4px 10px 4px 10px;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+
+  color:#dedede;
+  border-radius:10px;
+  min-width: 90px;
+  min-height: 60px;
+}
+
 /* DIV DO BOTÃO */
 .btn-div{
   display: flex;
@@ -144,17 +179,29 @@ input[type="radio"], input[type="checkbox"]{ /* REMOVE A BOLINHA DO INPUT */
   font-weight: bold;
   background-color: #3d3dff;
   color:white;
-  font-size: 26px;
+  font-size: 24px;
   width: 160px;
   height: 60px;
   border: none;
-  box-shadow: 3px 3px  #0b005c;;
+  box-shadow: 3px 3px  #0b005c;
   transition: 0.15s;
   cursor:pointer;
 }
 .btn-stl:hover{
   background-color: black;
   box-shadow: 3px 3px #3b3b3b;
+}
+/* botão final */
+button#return{
+  background-color: white;
+  color:black;
+  box-shadow: 3px 3px  black;
+  transition:0.15s;
+}
+button#return:hover{
+  background-color: black;
+  color:white;
+  box-shadow: 3px 3px  #3b3b3b;
 }
 
 /* BOTTOM */
@@ -174,7 +221,6 @@ div#bottom p{
   margin:0;
 }
 div#bottom b{
-  color:#3d3dff;
   font-size:24px;
 }
 div#bottom a{
@@ -193,25 +239,25 @@ div#result{
 }
 
 .aprovado{
-  border-radius: 10px;
-  border: 3px solid #000d4d;
-  background-color: lightblue;
-  color:#000d4d;
-  box-shadow: 3px 3px #000d4d;
+  background-color: #e5fff5;
+  color:#133305;
   padding: 25px;
   margin: 50px;
 }
 .reprovado{
-  border-radius: 10px;
-  border: 3px solid #4d001f;
   background-color: #fee1e1;
   color:#4d001f;
-  box-shadow: 3px 3px #4d001f;
+  padding: 25px;
+  margin: 50px;
+}
+.quasela{
+  background-color: lightblue;
+  color:#000d4d;
   padding: 25px;
   margin: 50px;
 }
 div#btn-result{
-  margin:25px;
+  margin:50px 0px 50px 0px;
 }
 
 /* ERRO */
@@ -224,6 +270,11 @@ div#msgerro{
   justify-content: center;
   align-items: center;
   padding-bottom: 50px;
+}
+
+/* BTN RESULT */
+#btn-result{
+  display:none;
 }
 
 /* RESIZE */
@@ -258,11 +309,11 @@ div#msgerro{
     width:calc(100% - 50px);
     padding:0 25px 25px 25px;
   }
-  div#intro{
-    margin: 25px 25px 50px 25px;
+  div#result, .aprovado, .reprovado, .quasela{
+    margin:0;
   }
-  div#result, .aprovado, .reprovado{
-    margin:25px;
+  #verificar{
+    margin:0;
   }
 }
 
@@ -271,8 +322,8 @@ div#msgerro{
   div#box-geral{
     display: flex;
   }
-  div#intro, div#result, .aprovado, .reprovado{
-    margin: 50px;
+  div#result, .aprovado, .reprovado, .quasela{
+    margin:0px 50px 50px 50px;
   }
   .box-cont{
     width:50%;

@@ -5,279 +5,36 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width">
   <title>SafePass</title>
-  <link href="style.css" rel="stylesheet" type="text/css" />
+  <link href="home.css" rel="stylesheet" type="text/css" />
   <link href='https://fonts.googleapis.com/css?family=Poppins' rel='stylesheet'>
 </head>
 
 <body>
+  
+
   <div id="top"><h1>SafePass</h1></div>
-
+  
   <div id="main">
-    <div id="col-esq" class="edges"></div>
+    <div id="bloco">
     
-    <div id="mid">
-      
-      <div id="intro">
-        <h2 class="titles">O que é o SafePass?</h2>
+      <div class="texts">
+        <h2>O que é o SafePass?</h2>
         <p>SafePass é um projeto acadêmico feito por estudantes da Universidade de Vila Velha.</p>
-        <p>O intuito dessa ferramenta é ajudar e conscientizar o ciclista a realizar a travessia da Terceira Ponta, que liga as cidades de Vila Velha e Vitória. A ferramenta não <b>proíbe</b> ou <b>permite</b> o usuário de realizar ou não a travessia pela ciclovia. O objetivo é apenas <b>contribuir</b> para a checagem dos equipamentos de segurança e demais fatores que devem ser considerados antes da pedalada pela ponte.</p>
-      </div>
-
-      
-      <div id="box-geral">
-        
-        <div id="box-esq" class="box-cont">
-          <h2 class="titles">Sobre o ciclista</h2>
-
-          <!-- COMEÇO DOS BOXES DE PERGUNTAS -->
-          <div class="box-questions">
-            <h3 class="question">Há quanto tempo você anda de bicicleta?</h3>
-            <div id="q-tempo" class="box-options">
-
-              <div class="two-options">
-                <div class="div-option">
-                  <label for="tempo1" class="opt-click">
-                  <input type="radio" id="tempo1" name="tempo" value="tempo-0-4m">0 - 4 meses</label>
-                </div>
-  
-                <div class="div-option">
-                  <label for="tempo2" class="opt-click">
-                  <input type="radio" id="tempo2" name="tempo" value="tempo-5-12m">5 - 12 meses</label>
-                </div>
-              </div>
-
-              <div class="two-options">
-                <div class="div-option">
-                  <label for="tempo3" class="opt-click">
-                  <input type="radio" id="tempo3" name="tempo" value="tempo-1-2a">1 - 2 anos</label>
-                </div>
-  
-                <div class="div-option">
-                  <label for="tempo4" class="opt-click">
-                  <input type="radio" id="tempo4" name="tempo" value="tempo-m2a">Mais de<br> 2 anos</label>
-                </div>
-              </div>
-              
-            </div>
-          </div>
-
-          <div class="box-questions">
-            <h3 class="question">Quantas vezes você pedala por semana?</h3>
-            <div id="q-tempo" class="box-options">
-
-              <div class="two-options">
-                <div class="div-option">
-                  <label for="freq1" class="opt-click">
-                  <input type="radio" id="freq1" name="frequencia" value="freq-rara">Raramente</label>
-                </div>
-  
-                <div class="div-option">
-                  <label for="freq2" class="opt-click">
-                  <input type="radio" id="freq2" name="frequencia" value="freq-1-3v">1 - 3 vezes</label>
-                </div>
-              </div>
-
-              <div class="two-options">
-                <div class="div-option">
-                  <label for="freq3" class="opt-click">
-                  <input type="radio" id="freq3" name="frequencia" value="freq-4-6v">4 - 6 vezes</label>
-                </div>
-  
-                <div class="div-option">
-                  <label for="freq4" class="opt-click">
-                  <input type="radio" id="freq4" name="frequencia" value="freq-todos">Todos<br> os dias</label>
-                </div>
-              </div>
-              
-            </div>
-          </div>
-
-          <div class="box-questions">
-            <h3 class="question">Você utiliza equipamentos de segurança?</h3>
-            <div id="q-tempo" class="box-options">
-
-              <div class="two-options">
-                <div class="div-option">
-                  <label for="eqp-sim" class="opt-click">
-                  <input type="radio" id="eqp-sim" name="equipamentos" value="sim-eqp">Sim</label>
-                </div>
-  
-                <div class="div-option">
-                  <label for="eqp-nao" class="opt-click">
-                  <input type="radio" id="eqp-nao" name="equipamentos" value="nao-eqp">Não</label>
-                </div>
-              </div>
-              
-            </div>
-          </div>
-
-          <div class="box-questions" id="equipo-opt">
-            <h3 class="question">Quais equipamentos para ciclismo você utiliza?</h3>
-            <div id="q-tempo" class="box-options">
-
-              <div class="two-options">
-                <div class="div-option">
-                  <label for="eqp1" class="opt-click">
-                  <input type="checkbox" id="eqp1" name="equipamentos-opt" value="capacete">Capacete</label>
-                </div>
-  
-                <div class="div-option">
-                  <label for="eqp2" class="opt-click">
-                  <input type="checkbox" id="eqp2" name="equipamentos-opt" value="luva">Luva</label>
-                </div>
-              </div>
-
-              <div class="div-option">
-                <label for="eqp3" class="opt-click">
-                <input type="checkbox" id="eqp3" name="equipamentos-opt" value="oculos">Óculos</label>
-              </div>
-              
-            </div>
-          </div>
-          
-        </div>
-
-      <!-- QUEBRA PARA A COLUNA DIREITA -->
-        
-        <div id="box-dir" class="box-cont">
-          <h2 class="titles">Sobre a bicicleta</h2>
-          
-          <div class="box-questions">
-            <h3 class="question">Há quanto tempo foi feita a última revisão na sua bicicleta?</h3>
-            <div id="q-rev" class="box-options">
-
-              <div class="two-options">
-                <div class="div-option">
-                  <label for="rev1" class="opt-click">
-                  <input type="radio" id="rev1" name="rev" value="rev-m1m">Menos<br>de 1 mês</label>
-                </div>
-  
-                <div class="div-option">
-                  <label for="rev2" class="opt-click">
-                  <input type="radio" id="rev2" name="rev" value="rev-1-3m">1 - 3 meses</label>
-                </div>
-              </div>
-
-              <div class="two-options">
-                <div class="div-option">
-                  <label for="rev3" class="opt-click">
-                  <input type="radio" id="rev3" name="rev" value="rev-4-6m">4 - 6 meses</label>
-                </div>
-  
-                <div class="div-option">
-                  <label for="rev4" class="opt-click">
-                  <input type="radio" id="rev4" name="rev" value="rev-m6m">Mais de<br> 6 meses</label>
-                </div>
-              </div>
-              
-            </div>
-            
-          </div>
-          
-          <div class="box-questions">
-            <h3 class="question">Sua bicicleta possui refletor (olho de gato)?</h3>
-            <div id="q-tempo" class="box-options">
-
-              <div class="two-options">
-                <div class="div-option">
-                  <label for="refl-sim" class="opt-click">
-                  <input type="radio" id="refl-sim" name="refletor" value="sim-refl">Sim</label>
-                </div>
-  
-                <div class="div-option">
-                  <label for="refl-nao" class="opt-click">
-                  <input type="radio" id="refl-nao" name="refletor" value="nao-refl">Não</label>
-                </div>
-              </div>
-              
-            </div>
-          </div>
-
-          <div class="box-questions">
-            <h3 class="question">Sua bicicleta possui sininho?</h3>
-            <div id="q-tempo" class="box-options">
-
-              <div class="two-options">
-                <div class="div-option">
-                  <label for="sino-sim" class="opt-click">
-                  <input type="radio" id="sino-sim" name="sininho" value="sim-sino">Sim</label>
-                </div>
-  
-                <div class="div-option">
-                  <label for="sino-nao" class="opt-click">
-                  <input type="radio" id="sino-nao" name="sininho" value="nao-sino">Não</label>
-                </div>
-              </div>
-              
-            </div>
-          </div>
-
-          <div class="box-questions">
-            <h3 class="question">Sua bicicleta possui freios?</h3>
-            <div id="q-tempo" class="box-options">
-
-              <div class="two-options">
-                <div class="div-option">
-                  <label for="freio-sim" class="opt-click">
-                  <input type="radio" id="freio-sim" name="freio" value="sim-freio">Sim</label>
-                </div>
-  
-                <div class="div-option">
-                  <label for="freio-nao" class="opt-click">
-                  <input type="radio" id="freio-nao" name="freio" value="nao-freio">Não</label>
-                </div>
-              </div>
-              
-            </div>
-          </div>
-
-          <!-- desabilitado -->
-          <!-- <div class="box-questions">
-            <h3 class="question">Sua bicicleta possui retrovisor?</h3>
-            <div id="q-tempo" class="box-options">
-
-              <div class="two-options">
-                <div class="div-option">
-                  <label for="retro-sim" class="opt-click">
-                  <input type="radio" id="retro-sim" name="retrovisor" value="sim-retrovisor">Sim</label>
-                </div>
-  
-                <div class="div-option">
-                  <label for="retro-nao" class="opt-click">
-                  <input type="radio" id="retro-nao" name="retrovisor" value="nao-retrovisor">Não</label>
-                </div>
-              </div>
-              
-            </div>
-          </div> -->
-
-          
-        </div>
-
-        <!-- FIM DA DIV PAI DAS PERGUNTAS -->
-      </div>
-
-      <div id="verificar" class="btn-div">
-        <button onclick="verificar()" class="btn-stl" id="confirm">OK!</button>
+        <p>O intuito dessa ferramenta é ajudar e conscientizar o ciclista a realizar a travessia da Terceira Ponte, que liga as cidades de Vila Velha e Vitória. A ferramenta não <b>proíbe</b> ou <b>permite</b> o usuário de realizar ou não a travessia pela ciclovia. O objetivo é apenas <b>contribuir</b> para a checagem dos equipamentos de segurança e demais fatores que devem ser considerados antes da pedalada pela ponte.</p>
       </div>
       
-      <div id="msgerro"></div>
+      <div class="texts">
+        <h2 style="margin-top: 50px;">Como funciona?</h2>
+        <p>A verificação é feita na ferramenta através de um simples quesionário. As perguntas são feitas de forma direta e objetiva para compreender como o ciclista realiza sua pedalada. Com base em suas respostas, é feita uma análise para dizer ao ciclista se ele está apto ou não para realizar a travessia da ponte. Como resultado da análise, há os pontos de melhoria sugeridos ao ciclista para que ele possa se preparar para realizar seu pedal de maneira mais segura.</p>
+      </div>
 
-      <div id="result" class="">
-        <h2 class="titles">Resultado</h2>
-        <div id="res-texto">
-          
-        </div>
-        <div class="btn-div" id="btn-result">
-          <button onclick="location.reload()" class="btn-stl" id="confirm">OK!</button>
-        </div>        
-      </div>     
+      <div class="texts">
+        <h2 style="margin-top: 50px;">Quer dar uma olhada?</h2>
+        <p>Fique à vontade para realizar o questionário e verificar se você está preparado para realizar uma pedala mais segura! Basta <b><a href="form.html">CLICAR AQUI <i class="fa-solid fa-arrow-up-right-from-square"></i></a></b></p>
+      </div>
       
-
-      <!-- FIM DA DIV DO MEIO -->
     </div>
-      
-    <div id="col-dir" class="edges"></div>
+    
   </div>
 
   <div id="bottom">
@@ -290,9 +47,8 @@
   </div>
   
   
-
-
 </body>
-<script src="script.js"></script>
+<!-- <script src="script.js"></script> -->
+<script src="https://kit.fontawesome.com/8267ea7449.js" crossorigin="anonymous"></script>
 
 </html>
