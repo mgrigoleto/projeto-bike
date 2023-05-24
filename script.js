@@ -181,11 +181,15 @@ function mostrar(erro, mensagem){
   if(erro > 3){
     //mudar a localização do usuário no site
     loc.innerHTML = "<p id='loc'><a href='index.html'>Home</a> > <a href='form.html'>Formulário</a> > <b>Resultado</b></p>"
+    
     //mostrar a div resultado e adicionar seu estilo
     divResultado.style.display = 'block'
     // btnOK.style.display = 'flex'
     divResultado.classList.add('reprovado')
+    
     document.body.style.backgroundColor = "#fee1e1"
+    document.getElementById('box-esq').style.backgroundColor = "#fee1e1"
+    document.getElementById('box-dir').style.backgroundColor = "#fee1e1"
 
     //montar comçeo da mensagem
     resultado.innerHTML = '<h2 class="titles">Não foi dessa vez...</h2><p>Pelo o que observamos, <b>você não está preparado</b> para realizar a travessia da ponte com segurança.</p>'+
@@ -204,7 +208,10 @@ function mostrar(erro, mensagem){
     divResultado.style.display = 'block'
     // btnOK.style.display = 'flex'
     divResultado.classList.add('quasela')
+    
     document.body.style.backgroundColor = "lightblue"
+    document.getElementById('box-esq').style.backgroundColor = "lightblue"
+    document.getElementById('box-dir').style.backgroundColor = "lightblue"
 
     //montar comçeo da mensagem
     resultado.innerHTML = '<h2 class="titles">Quase lá!</h2><p>Pelo o que observamos, <b>você não está totalmente preparado</b> para realizar a travessia da ponte com segurança, mas <b>falta pouco!</b></p>'+
@@ -223,7 +230,10 @@ function mostrar(erro, mensagem){
     divResultado.style.display = 'block'
     // btnOK.style.display = 'flex'
     divResultado.classList.add('aprovado')
+    
     document.body.style.backgroundColor = "#e5fff5"
+    document.getElementById('box-esq').style.backgroundColor = "#e5fff5"
+    document.getElementById('box-dir').style.backgroundColor = "#e5fff5"
 
     ///montar mensagem
     resultado.innerHTML = '<h2 class="titles">Muito bem!</h2><p>Pelo o que observamos, <b>você está preparado</b> para realizar a travessia da ponte com segurança.</p>'+
