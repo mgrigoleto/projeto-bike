@@ -46,7 +46,7 @@ div#main{
 }
 .edges{
   width:10%;
-  background-color: #cdf2fe;
+  background-color: inherit;
 }
 
 /* DIV PRINCIPAL PARA O CONTEÚDO */
