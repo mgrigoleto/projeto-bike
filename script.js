@@ -227,7 +227,7 @@ function mostrar(erro, mensagem){
     // btnOK.style.display = 'flex'
     divResultado.classList.add('aprovado')
     
-    document.body.style.backgroundColor = "#e5fff5"
+    document.body.style.backgroundColor = "#a8ffde"
 
     ///montar mensagem
     resultado.innerHTML = '<h2 class="titles">Muito bem!</h2><p>Pelo o que observamos, <b>você está preparado</b> para realizar a travessia da ponte com segurança.</p>'+
@@ -235,8 +235,4 @@ function mostrar(erro, mensagem){
       '<p> Lembre-se de checar os freios, os pneus e seus equipamentos de segurança. Se for conveniente, você pode verificar a possibilidade de adquirir outros equipamentos, como retorvisor, apoio da bicileta, lanternas, etc.</p>'+
           '<p>Tenha uma boa pedalada!</p>'
   }
-}
-
-function retornarMenu(){
-  window.location.href = 'index.html'
 }

@@ -43,6 +43,7 @@ div#path a:hover{
 div#main{
   display:flex;
   width:100%;
+  min-height: 90vh;
 }
 .edges{
   width:10%;
@@ -239,7 +240,7 @@ div#result{
 }
 
 .aprovado{
-  background-color: #e5fff5;
+  background-color: #a8ffde;
   color:#133305;
   padding: 25px;
   margin: 50px;
