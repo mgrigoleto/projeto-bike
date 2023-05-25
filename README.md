@@ -4,7 +4,7 @@ Este repositório é para versionamento de um projeto acadêmico realizado na Un
 Para visualizá-lo, basta clicar [aqui](https://mgrigoleto.github.io/projeto-bike/).
 <br> 
 
-## Versão 2.0.0 Beta<br>  
+## Versão 2.0.3 Beta<br>  
 
 **Novos recursos:**
 - Adicionado tela inicial;
