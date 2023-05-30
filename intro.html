@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>SafePass</title>
+  <link href="form.css" rel="stylesheet" type="text/css" />
+  <link href='https://fonts.googleapis.com/css?family=Poppins' rel='stylesheet'>
+</head>
+
+<body>
+  <div id="top"><h1>SafePass</h1></div>
+  <div id="path"><p id="loc"><a href="index.html">Home</a> > <b>Introdução</b></p></div>
+
+  <div id="main">
+    <div id="col-esq" class="edges"></div>
+    
+    <div id="mid">
+      
+      <div id="intro">
+        <h2 class="titles">Introdução</h2>
+        <p>Antes de começar as verificações sobre sua bicicleta e como você pedala, gostaríamos de entender melhor sobre sua saúde. Você pode optar por não responder essas perguntas e passar para o formulário sobre a pedelada clicando em "<b>pronto</b>" no final dessa página. Pedimos que responda às perguntas com sinceridade.</p>
+      </div>
+          
+      <h2 id="sobre-saude"class="titles">Sobre sua saúde</h2>
+      
+      <div id="box-geral">
+        
+        <div id="box-esq-intro" class="box-cont">
+
+          <!-- COMEÇO DOS BOXES DE PERGUNTAS -->
+          <div class="box-questions">
+            <h3 class="question">Qual a sua idade? </h3>
+            <div id="q-tempo" class="box-options">
+
+              <div class="two-options">
+                <div class="div-option">
+                  <label for="fx-etaria1" class="opt-click">
+                  <input type="radio" id="fx-etaria1" name="idade" value="10-25-a">10 - 25<br> anos</label>
+                </div>
+  
+                <div class="div-option">
+                  <label for="fx-etaria2" class="opt-click">
+                  <input type="radio" id="fx-etaria2" name="idade" value="26-35-a">26 - 35<br> anos</label>
+                </div>
+              </div>
+
+              <div class="two-options">
+                <div class="div-option">
+                  <label for="fx-etaria3" class="opt-click">
+                  <input type="radio" id="fx-etaria3" name="idade" value="36-49-a">36 - 49<br> anos</label>
+                </div>
+  
+                <div class="div-option">
+                  <label for="fx-etaria4" class="opt-click">
+                  <input type="radio" id="fx-etaria4" name="idade" value="50-a">50 anos<br> ou mais</label>
+                </div>
+              </div>
+              
+            </div>
+          </div>
+
+          <div class="box-questions">
+            <h3 class="question">Você tem ou já teve uma doença cardíaca?</h3>
+            <div id="q-tempo" class="box-options">
+
+              <div class="two-options">
+                <div class="div-option">
+                  <label for="card-sim" class="opt-click">
+                  <input type="radio" id="card-sim" name="cardiaca" value="card-sim">Sim</label>
+                </div>
+  
+                <div class="div-option">
+                  <label for="card-nao" class="opt-click">
+                  <input type="radio" id="card-nao" name="cardiaca" value="card-nao">Não</label>
+                </div>
+              </div> 
+              
+            </div>
+          </div>
+
+          <div class="box-questions">
+            <h3 class="question">Você já experimentou desconforto no peito com o esforço?</h3>
+            <div id="q-tempo" class="box-options">
+
+              <div class="two-options">
+                <div class="div-option">
+                  <label for="esfor-sim" class="opt-click">
+                  <input type="radio" id="esfor-sim" name="desconforto" value="esfor-sim">Sim</label>
+                </div>
+  
+                <div class="div-option">
+                  <label for="esfor-nao" class="opt-click">
+                  <input type="radio" id="esfor-nao" name="desconforto" value="esfor-nao">Não</label>
+                </div>
+              </div> 
+              
+            </div>
+          </div>
+          
+        </div>
+
+      <!-- QUEBRA PARA A COLUNA DIREITA -->
+        
+        <div id="box-dir" class="box-cont">
+          
+          <div class="box-questions">
+            <h3 class="question">Você tem alguma restrição médica?</h3>
+            <div id="q-tempo" class="box-options">
+
+              <div class="two-options">
+                <div class="div-option">
+                  <label for="medic-sim" class="opt-click">
+                  <input type="radio" id="medic-sim" name="restricao" value="medic-sim">Sim</label>
+                </div>
+  
+                <div class="div-option">
+                  <label for="medic-nao" class="opt-click">
+                  <input type="radio" id="medic-nao" name="restricao" value="medic-nao">Não</label>
+                </div>
+              </div> 
+              
+            </div>
+          </div>
+          
+          <div class="box-questions">
+            <h3 class="question">Você possui alguma doença respiratória importante, como doença pulmonar obstrutiva crônica, fibrose cística, etc.?</h3>
+            <div id="q-tempo" class="box-options">
+
+              <div class="two-options">
+                <div class="div-option">
+                  <label for="doenca-sim" class="opt-click">
+                  <input type="radio" id="doenca-sim" name="doenca" value="doenca-sim">Sim</label>
+                </div>
+  
+                <div class="div-option">
+                  <label for="doenca-nao" class="opt-click">
+                  <input type="radio" id="doenca-nao" name="doenca" value="doenca-nao">Não</label>
+                </div>
+              </div> 
+              
+            </div>
+          </div>
+
+          <div class="box-questions">
+            <h3 class="question">Você fuma ou parou de fumar há menos de 6 meses?</h3>
+            <div id="q-tempo" class="box-options">
+
+              <div class="two-options">
+                <div class="div-option">
+                  <label for="fuma-sim" class="opt-click">
+                  <input type="radio" id="fuma-sim" name="fumar" value="fuma-sim">Sim</label>
+                </div>
+  
+                <div class="div-option">
+                  <label for="fuma-nao" class="opt-click">
+                  <input type="radio" id="fuma-nao" name="fumar" value="fuma-nao">Não</label>
+                </div>
+              </div> 
+              
+            </div>
+          </div>
+          
+        </div>
+
+        <!-- FIM DA DIV PAI DAS PERGUNTAS -->
+      </div>
+
+      <div id="go-to-form" class="btn-div">
+        <a href="form.html"><button class="btn-stl" id="go-to-form">PRONTO</button></a>
+      </div>
+
+      <!-- FIM DA DIV DO MEIO -->
+    </div>
+      
+    <div id="col-dir" class="edges"></div>
+  </div>
+
+  <div id="bottom">
+    <p><b>Conteúdo</b></p>
+    <p>Julia Monzoli</p>
+    <p>Romullo Zacché</p>
+    <p>Sara Fanticelle</p><br>
+    <p><b>Desenvolvimento</b></p>
+    <p><a target="blank" href="https://www.linkedin.com/in/maurício-grigoleto-794366228/">Maurício Grigoleto</a></p>
+  </div>
+  
+  
+
+
+</body>
+<script src="script.js"></script>
+  <script src="https://kit.fontawesome.com/8267ea7449.js" crossorigin="anonymous"></script>
+
+</html>

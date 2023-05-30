@@ -65,6 +65,17 @@ div#result p{
   text-align: center;
 }
 
+/* INTRO */
+div#intro{
+  margin:0 50px 0 50px;
+}
+div#intro p{
+  font-size:20px;
+}
+h2#sobre-saude{
+  margin:30px 0 30px 0;
+}
+
 /* DIVs PARA ORGANIZAR OS BLOCOS */
 div#box-geral{
   display: flex;
@@ -315,6 +326,15 @@ div#msgerro{
   }
   #verificar{
     margin:0;
+  }
+  div#box-esq-intro{
+    padding-bottom:0;
+  }
+  h2#sobre-saude{
+    margin-top: -10px;
+  }  
+  div#intro{
+    margin:0 25px 0px 25px;    
   }
 }
 

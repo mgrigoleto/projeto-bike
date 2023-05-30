@@ -170,17 +170,24 @@ function mostrar(erro, mensagem){
   //esconder os conteúdos da tela
   document.getElementById('box-geral').style.display = 'none'
   document.getElementById('verificar').style.display = 'none'
-  // document.getElementById('intro').style.display = 'none'
+  document.getElementById('intro').style.display = 'none'
   
   const divResultado = document.getElementById('result')
   const resultado = document.getElementById('res-texto')
   // const btnOK = document.getElementById('btn-result')
   const loc = document.getElementById('path')
 
+  //ir para o topo da tela
+  window.scrollTo({
+    top: 0,
+    left: 0,
+    behavior: 'smooth'
+  })
+
   // reprovado
   if(erro > 3){
     //mudar a localização do usuário no site
-    loc.innerHTML = "<p id='loc'><a href='index.html'>Home</a> > <a href='form.html'>Formulário</a> > <b>Resultado</b></p>"
+    loc.innerHTML = "<p id='loc'><a href='index.html'>Home</a> > <a href='intro.html'>Introdução</a> > <a href='form.html'>Formulário</a> > <b>Resultado</b></p>"
     
     //mostrar a div resultado e adicionar seu estilo
     divResultado.style.display = 'block'
@@ -201,7 +208,7 @@ function mostrar(erro, mensagem){
   // quase lá
   else if(erro <=3 && erro > 0){
     //mudar a localização do usuário no site
-    loc.innerHTML = "<p id='loc'><a href='index.html'>Home</a> > <a href='form.html'>Formulário</a> > <b>Resultado</b></p>"
+    loc.innerHTML = "<p id='loc'><a href='index.html'>Home</a> > <a href='intro.html'>Introdução</a> > <a href='form.html'>Formulário</a> > <b>Resultado</b></p>"
     //mostrar a div resultado e adicionar seu estilo
     divResultado.style.display = 'block'
     // btnOK.style.display = 'flex'
@@ -221,7 +228,7 @@ function mostrar(erro, mensagem){
   // aprovado
   else if(erro ==0){
     //mudar a localização do usuário no site
-    loc.innerHTML = "<p id='loc'><a href='index.html'>Home</a> > <a href='form.html'>Formulário</a> > <b>Resultado</b></p>"
+    loc.innerHTML = "<p id='loc'><a href='index.html'>Home</a> > <a href='intro.html'>Introdução</a> > <a href='form.html'>Formulário</a> > <b>Resultado</b></p>"
     //mostrar a div resultado e adicionar seu estilo
     divResultado.style.display = 'block'
     // btnOK.style.display = 'flex'
