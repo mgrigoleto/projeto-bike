@@ -184,16 +184,17 @@ function mostrar(erro, mensagem){
     behavior: 'smooth'
   })
 
-  // reprovado
-  if(erro > 3){
-    //mudar a localização do usuário no site
-    loc.innerHTML = "<p id='loc'><a href='index.html'>Home</a> > <a href='intro.html'>Introdução</a> > <a href='form.html'>Formulário</a> > <b>Resultado</b></p>"
+  //mudar a localização do usuário no site
+  loc.innerHTML = "<p id='loc'><a href='index.html'>Home</a> > <a href='intro.html'>Introdução</a> > <a href='form.html'>Formulário</a> > <b>Resultado</b></p>"
     
-    //mostrar a div resultado e adicionar seu estilo
-    divResultado.style.display = 'block'
+  //mostrar a div resultado
+  divResultado.style.display = 'block'
+
+  
+  // reprovado
+  if(erro > 3){    
     // btnOK.style.display = 'flex'
     divResultado.classList.add('reprovado')
-    
     document.body.style.backgroundColor = "#fee1e1"
 
     //montar comçeo da mensagem
@@ -207,13 +208,8 @@ function mostrar(erro, mensagem){
   
   // quase lá
   else if(erro <=3 && erro > 0){
-    //mudar a localização do usuário no site
-    loc.innerHTML = "<p id='loc'><a href='index.html'>Home</a> > <a href='intro.html'>Introdução</a> > <a href='form.html'>Formulário</a> > <b>Resultado</b></p>"
-    //mostrar a div resultado e adicionar seu estilo
-    divResultado.style.display = 'block'
     // btnOK.style.display = 'flex'
     divResultado.classList.add('quasela')
-    
     document.body.style.backgroundColor = "lightblue"
 
     //montar comçeo da mensagem
@@ -227,13 +223,8 @@ function mostrar(erro, mensagem){
 
   // aprovado
   else if(erro ==0){
-    //mudar a localização do usuário no site
-    loc.innerHTML = "<p id='loc'><a href='index.html'>Home</a> > <a href='intro.html'>Introdução</a> > <a href='form.html'>Formulário</a> > <b>Resultado</b></p>"
-    //mostrar a div resultado e adicionar seu estilo
-    divResultado.style.display = 'block'
     // btnOK.style.display = 'flex'
     divResultado.classList.add('aprovado')
-    
     document.body.style.backgroundColor = "#a8ffde"
 
     ///montar mensagem

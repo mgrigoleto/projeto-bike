@@ -24,6 +24,7 @@ div#path{
   justify-content: center;
   /* padding: 10px 0 10px 0; */
   margin:10px;
+  text-align: center;
 }
 div#path p{
   margin:0;
